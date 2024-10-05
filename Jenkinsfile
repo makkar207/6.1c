@@ -8,7 +8,6 @@ pipeline {
         EMAIL_RECIPIENTS = 'infomakkar@gmail.com'
     }
     
-
     triggers {
         pollSCM('H/2 * * * *') // Polls the repository every 2 minutes for changes
     }
