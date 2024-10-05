@@ -7,6 +7,7 @@ pipeline {
         PRODUCTION_SERVER = 'production-server-address'
         EMAIL_RECIPIENTS = 'infomakkar@gmail.com'
     }
+    // made changes
 
     triggers {
         pollSCM('H/2 * * * *') // Polls the repository every 2 minutes for changes
