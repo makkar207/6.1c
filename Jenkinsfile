@@ -1,5 +1,12 @@
 pipeline {
     agent any
+    
+    environment {
+        GIT_REPO = 'https://github.com/makkar207/6.1c.git'
+        STAGING_SERVER = 'staging-server-address'
+        PRODUCTION_SERVER = 'production-server-address'
+        EMAIL_RECIPIENTS = 'infomakkar@gmail.com'
+    }
 
     triggers {
         pollSCM('H/2 * * * *') // Polls the repository every 2 minutes for changes
