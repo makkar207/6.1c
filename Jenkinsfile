@@ -7,7 +7,7 @@ pipeline {
         PRODUCTION_SERVER = 'production-server-address'
         EMAIL_RECIPIENTS = 'infomakkar@gmail.com'
     }
-
+// changes made
     stages {
         stage('Build') {
             steps {
